@@ -5,9 +5,10 @@ body, html {
 }
 
 .main_container{
-    height: 100vh;
     display: flex;
     flex-direction: row;
+    width: 200vh;
+    height: 100vh
 
 }
 
@@ -50,16 +51,14 @@ body, html {
 
 .right-panel{
     background-color: #FFFFFF;
+    width: 40px;
     flex: 0 0 40%;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.right-panel form{
-    max-width: 400px;
-}
 
 
 .right-panel h1 {
@@ -88,6 +87,24 @@ body, html {
     flex: 1;
     margin-bottom: 15px; 
     font-weight: 600;
+}
+
+.right-panel .pages{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex: 1;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+    
+}
+
+.right-panel .pages button{
+    flex:1;
+    margin:0;
+    width: auto;
+    padding: 10px 15px;
 }
 
 
