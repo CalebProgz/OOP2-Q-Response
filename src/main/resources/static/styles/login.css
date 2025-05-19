@@ -22,7 +22,8 @@ main{
 }
 
 button {
-    padding: 8px 16px;
+    padding: 8px 185px ;
+    text-wrap: nowrap;
     font-size: 1.6rem;
     background-color: black;
     color: white;
@@ -59,7 +60,7 @@ button {
     display: block;
     border: solid black 1px;
     border-radius: 5px;
-    margin-bottom:10px;
+    margin-bottom:15px;
     margin-right: 50px
 }
 
@@ -71,7 +72,7 @@ button {
 }
 
 .main-image{
-    width: 60%;
+    width: 65%;
 }
 
 .sign-up-redirect{
@@ -80,4 +81,5 @@ button {
 
 .image-text{
     color: white;
+
 }
