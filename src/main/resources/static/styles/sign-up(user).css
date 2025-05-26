@@ -1,0 +1,229 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    width: 950px;
+    height: auto;
+    min-height: 580px;
+}
+
+.form-section {
+    flex: 0 0 45%; 
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start; 
+    position: relative;
+}
+
+h1 {
+    font-size: 26px; 
+    color: #333;
+    margin-bottom: 35px;
+    text-align: left; 
+    width: 100%; /
+}
+
+.google-signup {
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); /* Subtle shadow */
+}
+
+.google-signup:hover {
+    background-color: #357ae8;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); /* Hover shadow */
+}
+
+.or-divider {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    line-height: 0.1em;
+    margin: 30px 0;
+}
+
+.or-text {
+    background: #fff;
+    padding: 0 15px; 
+    color: #888;
+    font-size: 16px; 
+}
+
+form {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-group {
+    margin-bottom: 20px; 
+    width: 100%;
+}
+
+.input-group:nth-child(1),
+.input-group:nth-child(2) {
+    width: 48%;
+}
+
+.input-group:nth-child(1) {
+    margin-right: 4%;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px; 
+    color: #555;
+    font-size: 15px;
+    font-weight: bold; 
+}
+
+input::placeholder {
+    color: #aaa; 
+    font-style: italic;
+}
+
+input::focus-visible {
+    outline: #1a73e8 auto 2px; 
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #1a73e8;
+    outline: none;
+}
+
+.signup-button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 14px 30px; 
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 30px;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); /* Subtle shadow */
+}
+
+.signup-button:hover {
+    background-color: #1669d0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); /* Hover shadow */
+}
+
+.patient-label {
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    background-color: #f0f0f0; 
+    padding: 10px 25px; 
+    border-top-right-radius: 8px;
+    font-weight: bold;
+    color: #555;
+    text-transform: uppercase;
+    font-size: 15px; 
+    border-right: 1px solid #ccc; 
+    border-top: 1px solid #ccc;
+}
+
+.image-section {
+    flex: 1;
+    background-color: #e6f7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration-image {
+    max-width: 85%; 
+    max-height: 85%;
+    object-fit: contain;
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 95%; 
+        height: auto;
+    }
+
+    .form-section {
+        flex: none;
+        width: 100%;
+        padding: 30px;
+        align-items: stretch; 
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .google-signup,
+    .or-divider,
+    form,
+    .signup-button {
+        max-width: 100%;
+    }
+
+    .input-group:nth-child(1),
+    .input-group:nth-child(2) {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .image-section {
+        order: -1; 
+        height: 300px; 
+    }
+
+    .patient-label {
+        position: static; 
+        border-radius: 0;
+        border: none;
+        text-align: center;
+        padding: 15px;
+        background-color: #f0f0f0;
+        width: 100%;
+    }
+}
